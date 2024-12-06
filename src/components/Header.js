@@ -11,24 +11,25 @@ const Header = () => {
     <AppBar
       sx={{
         backgroundColor: (theme) => theme.palette.body_bg.main,
-        height: { xs: "64px", md: "79px" },
       }}
     >
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         {isMobile && <MenuSmall />}
         <Typography
-          variant="h6"
+          variant="h4"
           sx={{
             display: "inline-block",
+            fontFamily: "Satisfy",
+            fontWeight: 900,
             width: "auto",
             textAlign: { xs: "center", md: "start" },
             color: (theme) => theme.palette.primary.main,
           }}
         >
-          Cats&friends
+          Cats & friends
         </Typography>
         {!isMobile && <MenuLarge />}
-        {!isMobile && <IconNavigation />}
+        {!isMobile && <IconNavigation color={"light"} />}
       </Toolbar>
     </AppBar>
   );

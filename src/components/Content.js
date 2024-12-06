@@ -28,9 +28,9 @@ const Content = () => {
       <Typography
         variant="h1"
         sx={{
-          marginBottom: 10,
+          marginBottom: "10px",
           textAlign: "center",
-          fontSize: { xs: "4rem", md: "6rem" },
+          fontSize: { xs: "3rem", md: "5rem" },
         }}
       >
         Waiting for their owners

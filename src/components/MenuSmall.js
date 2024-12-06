@@ -10,6 +10,7 @@ import {
   AccordionSummary,
   AccordionDetails,
   Link,
+  Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -95,6 +96,7 @@ const MenuSmall = () => {
                     textTransform: "none",
                     width: "100%",
                     border: "none",
+                    boxShadow: "none",
                     color: (theme) => theme.palette.dark.main,
                   }}
                   defaultExpanded={false}
@@ -105,7 +107,7 @@ const MenuSmall = () => {
                     id="panel1-header"
                     data-testid="AccordionSummary"
                   >
-                    Stories
+                    <Typography>Stories</Typography>
                   </AccordionSummary>
                   <AccordionDetails>
                     <MenuList>
@@ -135,16 +137,13 @@ const MenuSmall = () => {
                   </AccordionDetails>
                 </Accordion>
               </MenuItem>
-              <MenuItem>
-                <Link
-                  onClick={handleModalClose}
-                  sx={{
-                    borderBottom: (theme) =>
-                      `solid 1px ${theme.palette.light.main}`,
-                  }}
-                >
-                  Login
-                </Link>
+              <MenuItem
+                sx={{
+                  borderBottom: (theme) =>
+                    `solid 1px ${theme.palette.light.main}`,
+                }}
+              >
+                <Link onClick={handleModalClose}>Login</Link>
               </MenuItem>
               <MenuItem
                 sx={{

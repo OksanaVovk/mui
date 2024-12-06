@@ -11,7 +11,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <>
         <Header />
-        <Container>
+        <Container sx={{ marginTop: "64.5px" }}>
           <Banner />
           <Content />
         </Container>
