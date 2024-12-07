@@ -5,9 +5,11 @@ const Banner = () => {
   return (
     <Box
       sx={{
-        padding: { xs: "40px 0 50px 0" },
+        padding: { xs: "40px 30px 50px 30px", md: "60px 50px 100px 50px" },
         display: "flex",
+        marginTop: "64.5px",
         flexDirection: { xs: "column", md: "row" },
+        backgroundColor: "#FAFAFA",
         alignItems: "center",
         justifyContent: "center",
       }}
@@ -36,7 +38,7 @@ const Banner = () => {
           variant="h1"
           sx={{
             marginBottom: { xs: "20px", md: "25px" },
-            fontSize: { xs: "3rem", md: "5rem" },
+            fontSize: { xs: "2.5rem", md: "4rem" },
           }}
         >
           Help animals

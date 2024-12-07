@@ -24,13 +24,17 @@ const Content = () => {
   };
 
   return (
-    <Box sx={{ marginBottom: "30px" }}>
+    <Box
+      sx={{
+        padding: { xs: "30px 30px 50px 30px", md: "50px" },
+      }}
+    >
       <Typography
-        variant="h1"
+        variant="h2"
         sx={{
-          marginBottom: "10px",
+          marginBottom: "20px",
           textAlign: "center",
-          fontSize: { xs: "3rem", md: "5rem" },
+          fontSize: { xs: "2rem", md: "3rem" },
         }}
       >
         Waiting for their owners
@@ -39,7 +43,7 @@ const Content = () => {
         sx={{
           width: "100%",
         }}
-        gap={8}
+        gap={12}
         cols={getCols()}
         variant="masonry"
       >

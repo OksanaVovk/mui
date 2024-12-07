@@ -13,7 +13,7 @@ const Footer = () => {
           flexDirection: { xs: "column", lg: "row" },
           alignItems: "start",
           justifyContent: "space-between",
-          padding: "40px",
+          padding: { xs: "30px", md: "50px" },
           borderBottom: (theme) => `solid 1px ${theme.palette.light.main}`,
         }}
       >

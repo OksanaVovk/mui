@@ -16,11 +16,11 @@ const Header = () => {
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         {isMobile && <MenuSmall />}
         <Typography
-          variant="h4"
+          variant="h3"
           sx={{
             display: "inline-block",
-            fontFamily: "Satisfy",
-            fontWeight: 900,
+            fontFamily: "Great Vibes ,cursive",
+            fontWeight: 400,
             width: "auto",
             textAlign: { xs: "center", md: "start" },
             color: (theme) => theme.palette.primary.main,
