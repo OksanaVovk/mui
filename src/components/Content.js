@@ -50,7 +50,10 @@ const Content = () => {
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
             <img
-              src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+              src={
+                process.env.PUBLIC_URL +
+                `${item.img}?w=164&h=164&fit=crop&auto=format`
+              }
               alt={item.title}
               loading="lazy"
             />

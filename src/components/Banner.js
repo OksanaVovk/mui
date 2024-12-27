@@ -20,7 +20,7 @@ const Banner = () => {
         }}
       >
         <img
-          src="/images/banner-cat1.png"
+          src={process.env.PUBLIC_URL + "/images/banner-cat1.png"}
           alt="cat"
           style={{ width: "100%", objectFit: "contain" }}
         />
