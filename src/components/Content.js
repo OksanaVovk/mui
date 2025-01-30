@@ -1,13 +1,13 @@
 import {
   ImageList,
   ImageListItem,
-  ImageListItemBar,
-  IconButton,
   Typography,
   useMediaQuery,
   Box,
 } from "@mui/material";
 import { itemData } from "./data";
+import StyledImageItemBar from "./StyledImageItemBar";
+import StyledIconButton from "./StyledIconButton";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 
 const Content = () => {
@@ -57,16 +57,17 @@ const Content = () => {
               alt={item.title}
               loading="lazy"
             />
-            <ImageListItemBar
+            <StyledImageItemBar
               title={item.title}
               position="bottom"
+              sx={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}
               actionIcon={
-                <IconButton
+                <StyledIconButton
                   aria-label={`like ${item.title}`}
                   sx={{ color: "rgba(255, 255, 255, 0.8)" }}
                 >
                   <FavoriteIcon />
-                </IconButton>
+                </StyledIconButton>
               }
             />
           </ImageListItem>
