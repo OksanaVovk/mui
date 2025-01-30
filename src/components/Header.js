@@ -20,6 +20,7 @@ const Header = () => {
           sx={{
             display: "inline-block",
             fontFamily: "Allison ,cursive",
+            fontSize: { xs: "32px", md: "64px", lg: "96px" },
             fontWeight: 400,
             width: "auto",
             textAlign: { xs: "center", md: "start" },
